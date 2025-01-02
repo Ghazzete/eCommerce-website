@@ -49,7 +49,7 @@ export default function ShoppingCartModal() {
           <div className="mt-8 flex-1 overflow-y-auto">
             <ul className="-my-6 divide-y divide-gray-200">
               {cartCount === 0 ? (
-                <h1 className="py-6">You don't have any items</h1>
+                <h1 className="py-6">You don&apos;t have any items</h1>
               ) : (
                 <>
                   {Object.values(cartDetails ?? {}).map((entry) => (
@@ -103,10 +103,11 @@ export default function ShoppingCartModal() {
             <p className="mt-0.5 text-sm text-gray-500">
               Shipping and taxes are calculated at checkout.
             </p>
-            
+
             <div className="mt-6">
               <Button
                 className="w-full bg-primary hover:bg-purple-600 text-white rounded-md py-2"
+                onClick={handleCheckoutClick} // Attach the function here
               >
                 Checkout
               </Button>

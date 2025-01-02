@@ -55,5 +55,4 @@ const CheckoutNow: React.FC<ProductCart> = ({
     </Button>
   );
 };
-
 export default CheckoutNow;

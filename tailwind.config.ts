@@ -60,7 +60,6 @@ const config: Config = {
   },
   plugins: [
     require("tailwindcss-animate"),
-    require("@tailwindcss/line-clamp"), // Added line-clamp plugin
   ],
 };
 
